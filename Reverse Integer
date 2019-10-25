@@ -1,0 +1,67 @@
+class Solution:
+    def reverse(self, x: int) -> int:
+#ATTEMPT 2 using math (THIS IS HOW YOU CAN ALSO CHECK IF PALINDROME OR NOT)
+        num = 0
+        a = abs(x)
+        while (a!=0):
+            # print("a",a)
+            temp = a%10
+            # print("temp",temp)
+            num = num*10+temp
+            # print("num",num)
+            a=a//10
+        if x<0 and num<=2147483647:
+            return -num
+        elif x>0 and num<2147483647:
+            return num
+        else:
+            return 0
+
+
+#ATTEMPT 1 - USING STRINGS and Conversions
+#         print(pow(-2,3))
+#         print("-2pow31",pow(-2,31))
+#         print("2pow31-1",pow(2,31)-1)
+#         if x>-2147483648 and x<2147483647:
+#             s = str(x)
+#             z=str()
+#             # print(s)
+#             li = []
+#             if x>=0 and x<10:
+#                 return x
+#             elif x>9:
+#                 for i in range(len(s)-1,-1,-1):
+#                     a = int(s[i])%10
+#                     li.append(a)
+#                 print("list",li)
+
+#                 for num in li:
+#                     z += str(num)
+#                 print("o/p as string", z)
+#                 result = int(z)
+#                 if result>-2147483648 and result<2147483647:
+#                     print("o/p as integer", result)
+#                     return result
+#                 else: 
+#                     return 0
+            
+#             elif x<0 :
+#                 for i in range(len(s)-1,0,-1):
+#                     a = int(s[i])%10
+#                     li.append(a)
+#                 print("list",li)
+
+#                 for num in li:
+#                     z += str(num)
+#                 print("o/p as string", z)
+#                 result = int(z)*-1
+#                 if result>-2147483648 and result<2147483647:
+#                     print("o/p as integer", result)
+#                     return result
+#                 else: 
+#                     return 0
+#         else:
+#             print("yo")
+#             return 0
+            
+        
