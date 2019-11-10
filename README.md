@@ -1,2 +1,2 @@
 # Data-Structures
-Data Structures and Algorithms problems with different possible solutions will be on this repository.
+This repository includes data Structures and algorithms problems with different possible solutions with different time and space complexities.
